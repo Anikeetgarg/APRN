@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>APRN - Apply Now</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0; 
+      padding: 0; 
+      font-family: Arial, sans-serif;
+      background: #f3fff3;
+      color: #222;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Navbar */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #2e7d32;
+      color: white;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      box-sizing: border-box;
+      font-weight: bold;
+      font-size: 1.3rem;
+      z-index: 1000;
+    }
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 2rem;
+      font-weight: normal;
+      font-size: 1rem;
+    }
+    nav a {
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #a5d6a7;
+    }
+
+    /* Main content */
+    main {
+      margin-top: 70px; /* to clear fixed navbar */
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(46,125,50,0.15);
+    }
+
+    h1 {
+      margin: 0;
+      font-weight: 900;
+      font-size: 2rem;
+      color: #2e7d32;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: #2e7d32;
+      font-weight: 900;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+      color: #333;
+    }
+
+    /* Form styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    label {
+      font-weight: 700;
+      color: #2e7d32;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      padding: 0.6rem 0.75rem;
+      border-radius: 6px;
+      border: 1.5px solid #a5d6a7;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+      font-family: inherit;
+      resize: vertical;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #2e7d32;
+      outline: none;
+      box-shadow: 0 0 6px #81c784aa;
+    }
+
+    button {
+      align-self: flex-start;
+      background-color: #2e7d32;
+      color: white;
+      padding: 0.85rem 2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
+      box-shadow: 0 4px 8px rgba(46,125,50,0.4);
+    }
+    button:hover {
+      background-color: #4caf50;
+      box-shadow: 0 6px 12px rgba(76,175,80,0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+        margin: 70px 1rem 2rem;
+      }
+      button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    APRN - Opportunities and Voices
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roles.html">Roles & Feedback</a>
+      <a href="apply.html">Apply</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Apply to Join APRN</h1>
+    <h2>Join Us</h2>
+    <p>Interested in being part of the movement? Apply below to contribute your skills to a greener future.</p>
+
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="role">Select Role:</label>
+      <select id="role" name="role" required>
+        <option value="">--Choose a Role--</option>
+        <option value="chemistry">Chemistry</option>
+        <option value="marketing">Marketing</option>
+        <option value="communications">Communications</option>
+        <option value="leadership">Leadership</option>
+      </select>
+
+      <label for="message">Why do you want to join?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Apply Now</button>
+    </form>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>APRN - Roles & Feedback</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0; 
+      padding: 0; 
+      font-family: Arial, sans-serif;
+      background: #f3fff3;
+      color: #222;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Navbar */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #2e7d32;
+      color: white;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      z-index: 1000;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 2rem;
+      font-weight: normal;
+      font-size: 1rem;
+    }
+    nav a {
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #a5d6a7;
+    }
+
+    /* Page content container */
+    main {
+      margin-top: 60px; /* to avoid navbar overlap */
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Section styles */
+    section {
+      padding: 3rem 2rem;
+      color: white;
+    }
+
+    /* Alternating backgrounds for roles */
+    .role-odd {
+      background: linear-gradient(90deg, #1b5e20 0%, #4caf50 100%);
+    }
+    .role-even {
+      background: white;
+      color: #2e7d32;
+    }
+
+    /* Student feedback section */
+    .feedback {
+      background: linear-gradient(90deg, #2e7d32 0%, #81c784 100%);
+      color: white;
+      padding: 3rem 2rem;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: 900;
+      font-size: 2rem;
+      border-bottom: 3px solid white;
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: inherit;
+    }
+    p {
+      max-width: 800px;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    ul {
+      max-width: 800px;
+      padding-left: 1.2rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: inherit;
+    }
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    /* Apply button styles */
+    .apply-button {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      margin-top: 0.5rem;
+    }
+    .apply-button:hover {
+      background-color: #4caf50;
+    }
+
+    /* Footer */
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    APRN - Opportunities and Voices
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="roles.html">Roles & Feedback</a>
+      <a href="apply.html">Apply</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="role-odd">
+      <h2>Chemistry</h2>
+      <p>
+        Assist in researching sustainable agricultural methods and developing alternatives to harmful pesticides. This role involves lab work, soil analysis, and collaboration with environmental scientists to ensure eco-friendly solutions.
+      </p>
+      <p>
+        Ideal for individuals passionate about environmental science and chemistry who want hands-on experience contributing to meaningful research.
+      </p>
+      <p><em>Apply now to gain experience as a chemist and contribute to sustainable agriculture!</em></p>
+      <a href="apply.html" class="apply-button">Apply Now</a>
+    </section>
+
+    <section class="role-even">
+      <h2>Marketing</h2>
+      <p>
+        Design and implement campaigns to raise public awareness about environmental damage and sustainable practices. Manage social media channels, create promotional materials, and support fundraising initiatives.
+      </p>
+      <p>
+        Perfect for creative communicators eager to spread APRN’s mission and engage a wider audience.
+      </p>
+      <ul>
+        <li>Manage social media accounts</li>
+        <li>Create promotional campaigns</li>
+        <li>Coordinate outreach events</li>
+      </ul>
+      <p><em>Apply now to develop your marketing skills and help grow our community!</em></p>
+      <a href="apply.html" class="apply-button">Apply Now</a>
+    </section>
+
+    <section class="role-odd">
+      <h2>Communications</h2>
+      <p>
+        Help craft clear, engaging messages to connect with communities, stakeholders, and potential volunteers. Produce newsletters, website content, and handle media relations to strengthen APRN’s public presence.
+      </p>
+      <p>
+        Great for writers and communicators who want to develop impactful messaging skills in a meaningful cause.
+      </p>
+      <p><em>Apply now to get good at developing communication strategies and engaging audiences!</em></p>
+      <a href="apply.html" class="apply-button">Apply Now</a>
+    </section>
+
+    <section class="role-even">
+      <h2>Leadership</h2>
+      <p>
+        Guide project initiatives and coordinate volunteer teams to ensure goals are met efficiently. This role includes organizing meetings, managing resources, and fostering a motivated team environment.
+      </p>
+      <p>
+        Suited for motivated individuals who enjoy managing teams, planning, and making an impact through leadership.
+      </p>
+      <p><em>Apply now to build leadership skills and lead meaningful environmental projects!</em></p>
+      <a href="apply.html" class="apply-button">Apply Now</a>
+    </section>
+
+    <section class="feedback">
+      <h2>Student Feedback</h2>
+      <p><strong>Sarah T.:</strong> "Being part of APRN opened my eyes to real environmental problems. It’s inspiring to see the solutions we’re working on make an actual difference, and it has motivated me to pursue a career in environmental science."</p>
+      <p><strong>Ravi M.:</strong> "I applied for the chemistry role and learned so much about soil science and sustainable practices. APRN gave me hands-on experience and the chance to work on projects that truly impact communities."</p>
+      <p><strong>Alex P.:</strong> "The leadership experience I gained at APRN helped me develop essential project management and communication skills. Coordinating volunteers and running projects was both challenging and rewarding."</p>
+      <p><strong>Emily K.:</strong> "Working in communications has been amazing. Crafting messages that engage and educate people about sustainability has deepened my passion and helped build my confidence."</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 APRN. All Rights Reserved.
+  </footer>
+</body>
+</html>
